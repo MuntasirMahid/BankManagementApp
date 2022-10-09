@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="319.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StuffUser.AfterWithdrawFailed">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1677" height="226.0" layoutX="4.0" layoutY="87.0" stroke="TRANSPARENT" strokeType="INSIDE" width="497.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6baeff" height="82.0" stroke="TRANSPARENT" strokeType="INSIDE" width="507.0" />
+      <Label layoutX="98.0" layoutY="24.0" prefHeight="24.0" prefWidth="291.0" text="Annonymous Bank Ltd" textFill="#393939" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="backMenuButton" layoutX="31.0" layoutY="262.0" mnemonicParsing="false" onAction="#back" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #6baeff;" text="Menu" textFill="#1e1e1e">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Line endX="341.5" fill="#ffd4d4" layoutX="164.0" layoutY="82.0" startX="-164.0" stroke="#a40a0a00" />
+      <Label layoutX="152.0" layoutY="145.0" prefHeight="82.0" prefWidth="291.0" text="Something went wrong" textFill="#393939" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="backMenuButton1" layoutX="266.0" layoutY="262.0" mnemonicParsing="false" onAction="#withdrawTryAgainAction" prefHeight="29.0" prefWidth="102.0" style="-fx-background-color: #6baeff;" text="Try again" textFill="#1e1e1e">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

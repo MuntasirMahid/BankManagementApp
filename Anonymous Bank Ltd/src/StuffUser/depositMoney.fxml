@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="262.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StuffUser.DepositMoney">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="266.0" layoutX="229.0" layoutY="-3.0" stroke="TRANSPARENT" strokeType="INSIDE" width="259.0" />
+      <Button layoutX="318.0" layoutY="207.0" mnemonicParsing="false" onAction="#deposit" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: EF51A2;" text="Deposit" textFill="#f5f5f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="recipient" layoutX="269.0" layoutY="83.0" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: #ecf4f3; -fx-border-color: #79b1ff; -fx-background-radius: 4; -fx-border-radius: 4;" />
+      <TextField fx:id="amount" layoutX="270.0" layoutY="152.0" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: #ecf4f3; -fx-border-color: #79b1ff; -fx-background-radius: 4; -fx-border-radius: 4;" />
+      <Label layoutX="270.0" layoutY="58.0" prefHeight="9.0" prefWidth="171.0" text="Recipient account number" textFill="#434343">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="129.0" prefHeight="0.0" prefWidth="149.0" text="Amount of fund" textFill="#434343">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="266.0" layoutY="-3.0" stroke="TRANSPARENT" strokeType="INSIDE" width="230.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#056aa8" />
+                  <Stop color="#056aa8" offset="0.007662835249042145" />
+                  <Stop color="#57c7ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Label layoutX="36.0" layoutY="44.0" prefHeight="80.0" prefWidth="157.0" text="Deposit Money" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="22.0" layoutY="208.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="187.0" style="-fx-background-color: #f8b400;" text="Menu">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

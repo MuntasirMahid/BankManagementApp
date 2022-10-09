@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="295.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AfterSuccessAccountCreate">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="396.0" layoutX="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="456.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#59a3ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button layoutX="203.0" layoutY="236.0" mnemonicParsing="false" onAction="#createAgain" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: ffdc34;" text="Try again" textFill="#464646" />
+      <Button layoutX="144.0" layoutY="236.0" mnemonicParsing="false" onAction="#goToAdmin" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: fa4252;" text="Back" textFill="WHITE" />
+      <Label layoutX="124.0" layoutY="23.0" prefHeight="70.0" prefWidth="208.0" text="Account created Successfully" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="323.0" text="Anonymous bank ltd" />
+      <Label layoutX="147.0" layoutY="128.0" text="ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="158.0" text="Pass:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="rcvIDLabel" layoutX="206.0" layoutY="128.0" prefHeight="27.0" prefWidth="144.0" text="101245">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="rcvPassLabel" layoutX="206.0" layoutY="158.0" prefHeight="27.0" prefWidth="133.0" text="Pass">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

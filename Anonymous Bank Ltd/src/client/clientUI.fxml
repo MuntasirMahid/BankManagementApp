@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="327.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ClientUI">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="337.0" layoutY="-10.0" stroke="TRANSPARENT" strokeType="INSIDE" width="594.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="84.0" layoutX="4.0" layoutY="4.0" stroke="TRANSPARENT" strokeType="INSIDE" width="587.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#82a1ee" />
+                  <Stop color="#ffffff59" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="228.0" layoutX="3.0" layoutY="94.0" stroke="TRANSPARENT" strokeType="INSIDE" width="318.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#7af1fc" />
+                  <Stop color="#231f52" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="228.0" layoutX="327.0" layoutY="94.0" stroke="TRANSPARENT" strokeType="INSIDE" width="262.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#bfc7ff" />
+                  <Stop color="#7aeffa" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Button layoutX="351.0" layoutY="119.0" mnemonicParsing="false" onAction="#checkBal" prefHeight="54.0" prefWidth="205.0" style="-fx-background-radius: 25; -fx-background-color: ffffff;" text="Inquery balance">
+         <font>
+            <Font name="Tahoma" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button layoutX="352.0" layoutY="187.0" mnemonicParsing="false" onAction="#sendMoney" prefHeight="54.0" prefWidth="205.0" style="-fx-background-radius: 25; -fx-background-color: ffffff;" text="Send money">
+         <font>
+            <Font name="Tahoma" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label contentDisplay="CENTER" layoutX="13.0" layoutY="178.0" prefHeight="25.0" prefWidth="149.0" text="Account Number" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" editable="false" layoutX="12.0" layoutY="203.0" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: ffffff; -fx-background-radius: 0;" text="111222222">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label contentDisplay="CENTER" layoutX="13.0" layoutY="240.0" prefHeight="25.0" prefWidth="149.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pass" editable="false" layoutX="12.0" layoutY="264.0" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: ffffff; -fx-background-radius: 0;" text="Pass">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label contentDisplay="CENTER" layoutX="13.0" layoutY="115.0" prefHeight="25.0" prefWidth="149.0" text="AC holder name" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" editable="false" layoutX="12.0" layoutY="139.0" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: ffffff; -fx-background-radius: 0;" text="Shamim Bin Nur">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font></TextField>
+      <Label contentDisplay="CENTER" layoutX="170.0" layoutY="116.0" prefHeight="25.0" prefWidth="149.0" text="Phone Number" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phone" editable="false" layoutX="170.0" layoutY="139.0" prefHeight="25.0" prefWidth="141.0" style="-fx-background-color: ffffff; -fx-background-radius: 0;" text="01777772727">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label contentDisplay="CENTER" layoutX="170.0" layoutY="179.0" prefHeight="25.0" prefWidth="149.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="address" editable="false" layoutX="170.0" layoutY="203.0" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: ffffff; -fx-background-radius: 0;" text="01777772727">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label contentDisplay="CENTER" layoutX="170.0" layoutY="241.0" prefHeight="25.0" prefWidth="149.0" text="Gender" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="gender" editable="false" layoutX="170.0" layoutY="264.0" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: ffffff; -fx-background-radius: 0;" text="Male">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button layoutX="353.0" layoutY="253.0" mnemonicParsing="false" onAction="#passReset" prefHeight="54.0" prefWidth="205.0" style="-fx-background-radius: 25; -fx-background-color: ffffff;" text="Reset password">
+         <font>
+            <Font name="Tahoma" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="181.0" layoutY="28.0" prefHeight="39.0" prefWidth="177.0" text="Anonymous" textFill="#545454">
+         <font>
+            <Font name="Arial Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="41.0" prefHeight="25.0" prefWidth="77.0" text="Bank Ltd." textFill="#545454">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="517.0" layoutY="28.0" mnemonicParsing="false" onAction="#logout" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: e71414;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

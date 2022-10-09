@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="222.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StuffUser.StaffUI">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="190.0" layoutX="8.0" layoutY="15.0" stroke="TRANSPARENT" strokeType="INSIDE" width="201.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#608dff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="190.0" layoutX="217.0" layoutY="14.0" stroke="TRANSPARENT" strokeType="INSIDE" width="201.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#a8e1ff" />
+                  <Stop color="#a6afff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Button layoutX="235.0" layoutY="54.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: f30e5c; -fx-background-radius: 5;" text="Create Account" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="319.0" layoutY="105.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: f30e5c; -fx-background-radius: 0;" text="Withdraw" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="235.0" layoutY="105.0" mnemonicParsing="false" onAction="#depositMoney" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: f30e5c; -fx-background-radius: 0;" text="Deposit Money" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="26.0" layoutY="27.0" prefHeight="40.0" prefWidth="110.0" text="Welcome" textFill="#862d00" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="staff_name" layoutX="28.0" layoutY="56.0" prefHeight="40.0" prefWidth="119.0" text="Mr. Stuff" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="172.0" mnemonicParsing="false" onAction="#logout" prefHeight="21.0" prefWidth="46.0" style="-fx-background-color: d92027;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="235.0" layoutY="153.0" mnemonicParsing="false" onAction="#stuffPassChange" prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: f30e5c; -fx-background-radius: 3;" text="Change Password" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="319.0" layoutY="54.0" mnemonicParsing="false" onAction="#checkBal" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: f30e5c; -fx-background-radius: 3;" text="Availed deposit" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="237.0" layoutY="21.0" prefHeight="21.0" prefWidth="165.0" text="Anonymous Bank ltd" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
